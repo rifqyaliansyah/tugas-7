@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakon Tourism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="img/logo-1.png" alt="Riot" width="50" height="50">
+            <a class="navbar-brand" href="index.html">Dakon Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">Activity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <!-- Dropdowns -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Account
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">Help</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-light text-dark p-5 text-center">
+        <div class="container">
+            <h1 class="display-4">Enjoy an Exciting Vacation!</h1>
+            <p class="lead">Discover a variety of fun recreational activities for the whole family.</p>
+            <a href="#" class="btn btn-primary btn-lg">More</a>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb" class="mt-4">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Activity</li>
+            </ol>
+        </div>
+    </nav>
+
+<!-- Activity -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/activity-1.jpg"
+                    class="card-img-top" alt="Notre">
+                <div class="card-body">
+                    <h5 class="card-title">Notre Dame gargoyle</h5>
+                    <p class="card-text">Keep demons and evil forces away from the sacred walls that protect the community of churchgoers, by scaring them away.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#notreModal">
+                        See more
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/activity-2.jpg"
+                    class="card-img-top" alt="Montmartre">
+                <div class="card-body">
+                    <h5 class="card-title">Montmartre</h5>
+                    <p class="card-text">Is a large hill in Paris's northern 18th arrondissement. It is 130 m high and gives its name to the surrounding
+                    district, part of the Right Bank.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#montmartreModal">
+                        See more
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="img/activity-3.jpg"
+                    class="card-img-top" alt="Etretat">
+                <div class="card-body">
+                    <h5 class="card-title">Étretat</h5>
+                    <p class="card-text">The city is famous for the stunning rock formations carved into its white cliffs, including the Porte d'Aval arch
+                    andL'Aiguille (The Needle), a pillar rising from the sea.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#etretatModal">
+                        See more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Notre Modal -->
+<div class="modal fade" id="notreModal" tabindex="-1" aria-labelledby="notreModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="notreModalLabel">Notre Dame gargoyle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Carousel -->
+                <div id="carouselNotre" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/notre-1.jpg"
+                                class="d-block w-100" alt="Notre 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Notre Dame</h5>
+                                <p>Cathedral</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/notre-2.jpg"
+                                class="d-block w-100" alt="Notre 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Gargoyle</h5>
+                                <p>At Belfort Sluis</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/notre-3.jpg"
+                                class="d-block w-100" alt="Pantai 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Notre Dame De Paris</h5>
+                                <p>Chruch Building</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNotre"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNotre"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- End Carousel -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Montmartre -->
+<div class="modal fade" id="montmartreModal" tabindex="-1" aria-labelledby="montmartreModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="montmartreModalLabel">Montmartre</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Carousel -->
+                <div id="carouselMontmartre" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/montmarte-1.jpg"
+                                class="d-block w-100" alt="Montmartre 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>A November day in Paris</h5>
+                                <p>Visiting the famous Sacre-Coeur</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/montmarte-2.jpg"
+                                class="d-block w-100" alt="Montmartre 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Montmartre</h5>
+                                <p>Les rues de Montmartre à Paris</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/montmarte-3.jpg"
+                                class="d-block w-100" alt="Montmartre 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Paris</h5>
+                                <p>Rue de l'Arbreuvoir</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMontmartre"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMontmartre"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- End Carousel -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Etretat -->
+<div class="modal fade" id="etretatModal" tabindex="-1" aria-labelledby="etretatModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="etretatModalLabel">Étretat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Carousel -->
+                <div id="carouselEtretat" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/etretat-1.jpg"
+                                class="d-block w-100" alt="Etretat 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Coastal Cliffs</h5>
+                                <p>Landscape Nature</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/etretat-2.jpg"
+                                class="d-block w-100" alt="Etretat 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Chalk Cliffs</h5>
+                                <p>Animals Images & Picture</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/etretat-3.jpg"
+                                class="d-block w-100" alt="Etretat 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Sea</h5>
+                                <p>Normandy France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEtretat"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEtretat"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- End Carousel -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Fun holiday</h5>
+                    <p>
+                        We provide a wide selection of recreational activities for families and friends. Enjoy an
+                        unforgettable holiday with us!
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-end">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Email: dakontour@holiday.com</a></li>
+                        <li><a href="#" class="text-dark">Phone: +33 5305 2525</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-dark text-white">
+            © 2024 Dakon Tourism. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
